@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { Label } from '../ui/label';
-import { MapPin, Phone, Mail, MessageCircle, Clock, Coffee } from 'lucide-react';
+import { MapPin,MessageCircle, Clock, Coffee } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 
 export default function Contact() {
@@ -88,7 +88,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Ubicación',
-      value: 'Ciudad de México',
+      value: 'Cartagena De Indias',
       description: 'Disponible para reuniones presenciales'
     }
   ];

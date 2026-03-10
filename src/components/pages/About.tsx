@@ -1,9 +1,67 @@
 import { Card, CardContent } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { Heart, Coffee, Lightbulb, Target } from 'lucide-react';
-import bici from '../../assets/bici.jpg';
+// import bici from '../../assets/bici.jpg';
+import bici from '../../assets/yo.png';
 import { motion } from "framer-motion";
-import { fadeInUp, slideInLeft } from "../../lib/animations";
+import {slideInLeft } from "../../lib/animations";
+import Dibujo1 from '../../assets/Historia/dibujo tradicional. año 2017. edad 12 años.jpeg';
+import Dibujo2 from '../../assets/Historia/dibujo tradiciona. año 2018. edad 13 años.jpeg';
+import Dibujo3 from '../../assets/Historia/dibujo tradicional. año 2019. edad 14 años.jpeg';
+import Dibujo4 from '../../assets/Historia/ilustracion digital. año 2020. edad 15 años.jpeg';
+import Dibujo5 from '../../assets/Historia/dibujo tradiconal. año 2021. edad 16 años.jpeg';
+import Dibujo6 from '../../assets/Historia/Ilustracion digital fanart. año 2024. edad 19 años.jpeg';
+// import Dibujo7 from '../../assets/Historia/ilustracion digital. año 2018. edad 13 años.jpeg';
+import Dibujo8 from '../../assets/Historia/dibujo tradiconal. año 2025. edad 20 años.jpeg';
+import Dibujo9 from '../../assets/Historia/dibujo tradicional. año 2018. edad 13 años.jpeg';
+import Dibujo10 from '../../assets/Historia/ilustracion digital. año 2018. edad 13 años.jpeg';
+const carouselImages = [
+  {
+    url: Dibujo1,
+    alt: 'Ingredientes frescos en cocina cálida',
+    label: 'Pasión'
+  },
+  {
+    url: Dibujo2,
+    alt: 'Lluvia de ideas creativas',
+    label: 'Creatividad'
+  },
+  {
+    url: Dibujo3,
+    alt: 'Espacio de trabajo creativo',
+    label: 'Dedicación'
+  },
+  {
+    url: Dibujo4,
+    alt: 'Colaboración en equipo',
+    label: 'Colaboración'
+  },
+  {
+    url: Dibujo5,
+    alt: 'Aprendizaje y crecimiento personal',
+    label: 'Aprendizaje'
+  },
+  {
+    url: Dibujo6,
+    alt: 'Nuevos comienzos al amanecer',
+    label: 'Visión'
+  },
+  {
+    url: Dibujo8,
+    alt: 'Alianza y confianza profesional',
+    label: 'Confianza'
+  },
+  {
+    url: Dibujo9,
+    alt: 'Logros y éxito en la cima',
+    label: 'Logros'
+  },
+  {
+    url: Dibujo10,
+    alt: 'Logros y éxito en la cima',
+    label: 'Logros'
+  },
+];
 
 export default function About() {
   const skills = [
@@ -85,38 +143,54 @@ export default function About() {
       <section className="py-20 bg-[#4313B8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">
-            Los ingredientes de mi historia
+            MI HISTORIA HECHA ARTE
           </h2>
-          
-          <div className="prose prose-lg max-w-none text-white">
-            <p className="text-xl leading-relaxed mb-8">
-              Como cualquier buen plato, mi carrera profesional ha sido el resultado de combinar 
-              los ingredientes correctos en el momento adecuado. Todo comenzó con una curiosidad 
-              insaciable y el deseo de crear cosas que realmente importaran.
-            </p>
-            
-            <p className="text-lg leading-relaxed mb-6">
-              Durante mis primeros años, aprendí que la técnica sin corazón es como cocinar sin sal: 
-              funcional, pero sin alma. Por eso, desde el principio, decidí que cada proyecto 
-              llevaría no solo mi conocimiento técnico, sino también mi esencia personal.
-            </p>
-            
-            <p className="text-lg leading-relaxed mb-6">
-              He tenido la fortuna de trabajar con personas increíbles, cada una aportando su propio 
-              sabor a mi experiencia. Desde startups que apenas comenzaban hasta empresas consolidadas 
-              que buscaban reinventarse, cada colaboración ha sido una lección valiosa.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              Hoy, después de años de experiencia, mi enfoque sigue siendo el mismo: tratar cada 
-              proyecto como si fuera para mi propia familia. Con el mismo cuidado, la misma atención 
-              al detalle y el mismo amor que pondría en preparar una cena especial para las personas 
-              que más quiero.
-            </p>
+        </div>
+
+        {/* Infinite Carousel - Full Width */}
+        <div className="mt-12 mb-12 overflow-hidden">
+          <div className="infinite-carousel-track flex gap-6">
+            {/* First set of images */}
+            {carouselImages.map((image, index) => (
+              <div
+                key={`first-${index}`}
+                className="shrink-0 w-72 group cursor-pointer"
+              >
+                <div className="relative overflow-hidden rounded-xl shadow-lg">
+                  <img
+                    src={image.url}
+                    alt={image.alt}
+                    className="w-72 h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                    <span className="text-white font-semibold text-lg">{image.label}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {/* Duplicate set for seamless infinite loop */}
+            {carouselImages.map((image, index) => (
+              <div
+                key={`second-${index}`}
+                className="shrink-0 w-72 group cursor-pointer"
+              >
+                <div className="relative overflow-hidden rounded-xl shadow-lg">
+                  <img
+                    src={image.url}
+                    alt={image.alt}
+                    className="w-72 h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                    <span className="text-white font-semibold text-lg">{image.label}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-
       {/* Values Section */}
       <section className="py-20 bg-[#F297FB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -126,7 +200,7 @@ export default function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value) => (
-              <Card key={value.title} className="border-amber-200 hover:shadow-lg transition-shadow">
+              <Card key={value.title} className="border-[#4313B8]  hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
                   <value.icon className="h-12 w-12 text-[#4313B8] mb-4" />
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>

@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
-import { ExternalLink, Github, Star } from 'lucide-react';
-import imagen1 from "../../assets/imagen1.jpg"
-import imagen2 from "../../assets/imagen2.jpg"
-import imagen4 from "../../assets/imagen3.jpg"
-import imagen5 from "../../assets/imagen4.jpg"
-import imagen6 from "../../assets/imagen5.jpg"
-import imagen3 from "../../assets/imagen6.jpg"
+import { Star } from 'lucide-react';
+import imagen1 from "../../assets/HogarTech.png"
+import imagen2 from "../../assets/logo original helados.png"
+import imagen4 from "../../assets/imagen1.jpg"
+import imagen5 from "../../assets/imagen2.jpg"
+import imagen6 from "../../assets/imagen3.jpg"
+import imagen3 from "../../assets/flyer.png"
 import { motion } from "framer-motion";
 import {
   fadeInUp,
@@ -113,7 +113,7 @@ export default function Portfolio() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-64 object-contain"
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className="bg-[#4313B8] text-white">
@@ -193,7 +193,7 @@ export default function Portfolio() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-contain"
                 />
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-900">{project.title}</CardTitle>

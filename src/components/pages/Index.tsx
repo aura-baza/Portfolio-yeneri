@@ -3,27 +3,32 @@ import { Button } from '../ui/button';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import { fadeInUp, slideInLeft } from "../../lib/animations";
+import {slideInLeft } from "../../lib/animations";
+import Helados from '../../assets/Helados.png';
+import HogarTech from '../../assets/HogarTech.png';
+import HogarTechT from '../../assets/TarjetaHogarTech.png';
+import Aff from '../../assets/flyer.png';
+import Aff1 from '../../assets/flyer2.png';
 
 const sliderImages = [
   {
-    url: 'https://mgx-backend-cdn.metadl.com/generate/images/575027/2026-01-23/27b6b3b6-57f7-464d-9c18-d6ad2cab401d.png',
+    url: Helados,
     alt: 'Espacio de trabajo profesional con iluminación cálida'
   },
   {
-    url: 'https://mgx-backend-cdn.metadl.com/generate/images/575027/2026-01-23/f971a6a4-3ffe-4ad1-b018-c76ad1cf83f6.png',
+    url: HogarTech,
     alt: 'Oficina moderna con plantas y luz natural'
   },
   {
-    url: 'https://mgx-backend-cdn.metadl.com/generate/images/575027/2026-01-23/b5038677-6b48-4861-b133-16fc75d9aaf8.png',
+    url: HogarTechT,
     alt: 'Reunión colaborativa en ambiente acogedor'
   },
   {
-    url: 'https://mgx-backend-cdn.metadl.com/generate/images/575027/2026-01-23/04683f7c-b9ec-4741-9800-ee9a9dac1f88.png',
+    url: Aff,
     alt: 'Presentación de ideas en espacio inspirador'
   },
   {
-    url: 'https://mgx-backend-cdn.metadl.com/generate/images/575027/2026-01-23/409ed677-545b-40c7-a7f3-bc6522129db0.png',
+    url: Aff1,
     alt: 'Trabajo al aire libre con equilibrio vida-trabajo'
   }
 ];
@@ -80,7 +85,7 @@ export default function Index() {
             <div className="max-w-3xl">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
                 Auténtico como en casa,
-                <span className="block text-amber-400">profesional como debe ser</span>
+                <span className="block text-white" >profesional como debe ser</span>
               </h1>
               <p className="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700">
                 Transformo ideas en experiencias digitales que conectan, inspiran y generan resultados reales.
@@ -127,7 +132,7 @@ export default function Index() {
                     onClick={() => goToSlide(index)}
                     className={`!p-0 !min-w-0 !h-auto !rounded-full transition-all ${
                       index === currentSlide
-                        ? '!w-8 !h-2 !bg-amber-400'
+                        ? '!w-8 !h-2 !bg-[#4313B8]'
                         : '!w-2 !h-2 !bg-white/50 hover:bg-white/70'
                     }`}
                     aria-label={`Ir a imagen ${index + 1}`}

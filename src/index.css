@@ -48,7 +48,9 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
-
+body {
+  user-select: none;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -185,4 +187,24 @@ button:focus-visible {
   body {
     @apply bg-background text-foreground;
   }
+
+  @keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Mueve exactamente la mitad del ancho total (8 imágenes × (288px + 24px gap)) = 2496px */
+    transform: translateX(-2496px);
+  }
+}
+
+.infinite-carousel-track {
+  animation: infinite-scroll 30s linear infinite;
+  width: max-content;
+}
+
+/* Se pausa al pasar el cursor */
+.infinite-carousel-track:hover {
+  animation-play-state: paused;
+}
 }
