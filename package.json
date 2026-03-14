@@ -2,7 +2,7 @@
   "name": "portfolio-yeneri",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/aura-baza/Portfolio-yeneri.git",
+  "homepage": "https://aura-baza.github.io/portfolio-yeneri/",
   "type": "module",
   "scripts": {
     "dev": "vite",
