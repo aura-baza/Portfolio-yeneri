@@ -11,99 +11,99 @@ import { fadeInUp } from "../../lib/animations";
 export default function Experience() {
   const experiences = [
     {
-      title: 'Director de Tecnología',
-      company: 'StartupFamiliar Tech',
-      period: '2022 - Presente',
-      location: 'Ciudad de México',
-      description: 'Lidero el equipo técnico de una startup que desarrolla soluciones para negocios familiares, manteniendo siempre el equilibrio entre innovación y tradición.',
+      title: 'Aprendiz de diseño',
+      company: 'Affinity BPO S.A.S',
+      period: '2025 - 2026',
+      location: 'Cartagena De Indias',
+      description: 'Encargada del área de diseño de la empresa, responsable de la creación de piezas visuales para medios digitales e impresos, como publicaciones para redes sociales, banners y material corporativo. Gestioné de manera autónoma las necesidades de diseño de la compañía, apoyando la comunicación visual y organización de recursos gráficos',
       achievements: [
-        'Incrementé la eficiencia del equipo en 40%',
-        'Implementé metodologías ágiles con toque humano',
-        'Desarrollé 15+ productos exitosos'
+        'Diseñé piezas gráficas para redes sociales, campañas internas y material corporativo',
+        'Gestioné de forma autónoma todas las necesidades de diseño de la empresa',
+        'Desarrollé y adapté la identidad visual en diferentes formatos digitales e impresos'
       ],
-      technologies: ['React', 'Node.js', 'AWS', 'Team Leadership']
+      technologies: ['Adobe Photoshop', 'Adobe Illustrator', 'Canva']
     },
-    {
-      title: 'Consultor Senior de Experiencia Digital',
-      company: 'Agencia Calidez Digital',
-      period: '2020 - 2022',
-      location: 'Guadalajara',
-      description: 'Ayudé a empresas tradicionales a adoptar tecnologías digitales sin perder su esencia familiar y cercana.',
-      achievements: [
-        'Transformé digitalmente 25+ empresas familiares',
-        'Logré 95% de satisfacción del cliente',
-        'Creé metodología propia de transformación digital'
-      ],
-      technologies: ['UX Strategy', 'Digital Transformation', 'Consulting', 'Training']
-    },
-    {
-      title: 'Desarrollador Full Stack',
-      company: 'Estudio Creativo Hogar',
-      period: '2018 - 2020',
-      location: 'Monterrey',
-      description: 'Desarrollé sitios web y aplicaciones para pequeñas y medianas empresas, siempre con enfoque en la calidez humana.',
-      achievements: [
-        'Desarrollé 30+ sitios web exitosos',
-        'Mantuve 98% de tiempo de actividad',
-        'Implementé soluciones de e-commerce'
-      ],
-      technologies: ['JavaScript', 'PHP', 'MySQL', 'WordPress']
-    }
+    // {
+    //   title: 'Consultor Senior de Experiencia Digital',
+    //   company: 'Agencia Calidez Digital',
+    //   period: '2020 - 2022',
+    //   location: 'Guadalajara',
+    //   description: 'Ayudé a empresas tradicionales a adoptar tecnologías digitales sin perder su esencia familiar y cercana.',
+    //   achievements: [
+    //     'Transformé digitalmente 25+ empresas familiares',
+    //     'Logré 95% de satisfacción del cliente',
+    //     'Creé metodología propia de transformación digital'
+    //   ],
+    //   technologies: ['UX Strategy', 'Digital Transformation', 'Consulting', 'Training']
+    // },
+    // {
+    //   title: 'Desarrollador Full Stack',
+    //   company: 'Estudio Creativo Hogar',
+    //   period: '2018 - 2020',
+    //   location: 'Monterrey',
+    //   description: 'Desarrollé sitios web y aplicaciones para pequeñas y medianas empresas, siempre con enfoque en la calidez humana.',
+    //   achievements: [
+    //     'Desarrollé 30+ sitios web exitosos',
+    //     'Mantuve 98% de tiempo de actividad',
+    //     'Implementé soluciones de e-commerce'
+    //   ],
+    //   technologies: ['JavaScript', 'PHP', 'MySQL', 'WordPress']
+    // }
   ];
 
   const events = [
-    {
-      title: 'Conferencia "Tecnología con Corazón"',
-      type: 'Ponente Principal',
-      date: '2024',
-      location: 'TechFest México',
-      description: 'Presenté sobre cómo mantener la humanidad en el desarrollo tecnológico.',
-      image: conferencia1
-    },
-    {
-      title: 'Workshop: "Diseño UX para Negocios Familiares"',
-      type: 'Facilitador',
-      date: '2023',
-      location: 'Design Week Guadalajara',
-      description: 'Taller práctico sobre cómo diseñar experiencias digitales que respeten la tradición familiar.',
-      image: evento1
-    },
-    {
-      title: 'Panel: "El Futuro de las PYMES Digitales"',
-      type: 'Panelista',
-      date: '2023',
-      location: 'Congreso Nacional de Emprendimiento',
-      description: 'Discusión sobre las tendencias tecnológicas para pequeñas y medianas empresas.',
-      image: conferencia2
-    },
-    {
-      title: 'Masterclass: "Desarrollo Web con Propósito"',
-      type: 'Instructor',
-      date: '2022',
-      location: 'Universidad Tecnológica',
-      description: 'Clase magistral sobre desarrollo web enfocado en impacto social y humano.',
-      image: evento2
-    }
+   {
+  title: 'Jornada de Bienestar y Creatividad',
+  type: 'Participante – Apoyo en Diseño',
+  date: '2025',
+  location: 'Affinity BPO',
+  description: 'Participé en actividades internas enfocadas en bienestar laboral, apoyando con piezas gráficas para la comunicación visual del evento.',
+  image: evento1
+},
+{
+  title: 'Campaña Interna de Seguridad y Salud en el Trabajo',
+  type: 'Diseño Gráfico',
+  date: '2025',
+  location: 'Affinity BPO',
+  description: 'Desarrollo de piezas visuales para campañas de SST, facilitando la comunicación clara de mensajes preventivos al equipo de trabajo.',
+  image: evento2
+},
+{
+  title: 'Actividades de Comunicación Interna',
+  type: 'Diseñadora Gráfica en Prácticas',
+  date: '2026',
+  location: 'Affinity BPO',
+  description: 'Apoyo en la creación de material gráfico para eventos y campañas internas, fortaleciendo la identidad visual y la difusión de información dentro de la empresa.',
+  image: conferencia1
+},
+   {
+  title: 'Campaña Interna de Bienestar Laboral',
+  type: 'Apoyo en Diseño Gráfico',
+  date: '2026',
+  location: 'Affinity BPO',
+  description: 'Diseño de piezas gráficas para la difusión de actividades de bienestar dirigidas a los colaboradores, apoyando la comunicación interna de la empresa.',
+  image: conferencia2
+}
   ];
 
   const collaborations = [
     {
-      name: 'Fundación Tecnología para Todos',
-      role: 'Voluntario Técnico',
-      description: 'Desarrollo de plataformas web para ONGs que trabajan con comunidades vulnerables.',
-      impact: '500+ familias beneficiadas'
+      name: 'Helados la Bendición',
+      role: 'Voluntaria',
+      description: 'Desarrollo de una identidad visual y piezas publicitarias para su lanzamiento.',
+      impact: 'Mi familia, especialmente mi madre'
     },
     {
-      name: 'Red de Mentores Tech',
-      role: 'Mentor Senior',
-      description: 'Mentoría para jóvenes desarrolladores, enfocándome en desarrollo técnico y humano.',
-      impact: '25+ mentees graduados'
+      name: 'HogarTec',
+      role: 'Diseñadora',
+      description: ' El proyecto consistió en el desarrollo de una identidad visual minimalista y dinámica.',
+      impact: '3 amigos iniciando su negocio'
     },
     {
-      name: 'Cooperativa de Desarrolladores Independientes',
+      name: 'Ilustraciones Para Canal en YouTube',
       role: 'Miembro Fundador',
-      description: 'Creación de una cooperativa que promueve el trabajo colaborativo y justo.',
-      impact: '50+ proyectos colaborativos'
+      description: 'Diseño de un banner adaptable e ilustraciones personalizadas de la mascota',
+      impact: 'Varios amigos '
     }
   ];
 
@@ -117,7 +117,7 @@ export default function Experience() {
               Mi trayectoria profesional
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Como los platos que mejoran con el tiempo, mi experiencia se ha enriquecido 
+              Como los platos que mejoran con el tiempo, mi experiencia se ha enriquecido
               con cada proyecto, cada colaboración y cada desafío superado.
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function Experience() {
           <h2 className="text-3xl font-bold text-white mb-12 text-center">
             Experiencia profesional
           </h2>
-          
+
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <Card key={index} className="border-amber-200 hover:shadow-lg transition-shadow">
@@ -154,7 +154,7 @@ export default function Experience() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">{exp.description}</p>
-                  
+
                   <div className="mb-4">
                     <h4 className="font-semibold text-gray-900 mb-2">Logros principales:</h4>
                     <ul className="list-disc list-inside text-gray-600 space-y-1">
@@ -163,7 +163,7 @@ export default function Experience() {
                       ))}
                     </ul>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary" className="bg-amber-100 text-amber-800">
@@ -182,48 +182,48 @@ export default function Experience() {
       <section className="py-20 bg-[#F297FB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-          initial={fadeInUp.initial}
-          whileInView={fadeInUp.animate}
-          transition={{...fadeInUp.transition,duration: 0.6, ease: "easeOut"}}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Eventos y conferencias
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {events.map((event, index) => (
-              <Card key={index} className="overflow-hidden border-amber-200 hover:shadow-lg transition-shadow">
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  className="w-full h-48 object-cover"
-                />
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-lg text-gray-900">{event.title}</CardTitle>
-                      <Badge className="mt-2 bg-amber-600 text-white">{event.type}</Badge>
-                    </div>
-                    <div className="text-right text-sm text-gray-500">
-                      <div className="flex items-center">
-                        <Calendar className="h-4 w-4 mr-1" />
-                        {event.date}
+            initial={fadeInUp.initial}
+            whileInView={fadeInUp.animate}
+            transition={{ ...fadeInUp.transition, duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Eventos y conferencias
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {events.map((event, index) => (
+                <Card key={index} className="overflow-hidden border-amber-200 hover:shadow-lg transition-shadow">
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <CardHeader>
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <CardTitle className="text-lg text-gray-900">{event.title}</CardTitle>
+                        <Badge className="mt-2 bg-amber-600 text-white">{event.type}</Badge>
                       </div>
-                      <div className="flex items-center mt-1">
-                        <MapPin className="h-4 w-4 mr-1" />
-                        {event.location}
+                      <div className="text-right text-sm text-gray-500">
+                        <div className="flex items-center">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          {event.date}
+                        </div>
+                        <div className="flex items-center mt-1">
+                          <MapPin className="h-4 w-4 mr-1" />
+                          {event.location}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{event.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600">{event.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -232,35 +232,35 @@ export default function Experience() {
       <section className="py-20 bg-[#4313B8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-          initial={fadeInUp.initial}
-          whileInView={fadeInUp.animate}
-          transition={{...fadeInUp.transition,duration: 0.6, ease: "easeOut"}}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">
-            Colaboraciones y alianzas
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {collaborations.map((collab, index) => (
-              <Card key={index} className="text-center border-amber-200 hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <Users className="h-12 w-12 text-[#4313B8] mb-4 text-aline" />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{collab.name}</h3>
-                  <Badge variant="secondary" className="mb-4 bg-amber-100 text-amber-800">
-                    {collab.role}
-                  </Badge>
-                  <p className="text-gray-600 mb-4">{collab.description}</p>
-                  <div className="flex items-center justify-center text-amber-600">
-                    <Award className="h-4 w-4 mr-1" />
-                    <span className="font-semibold text-sm">{collab.impact}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+            initial={fadeInUp.initial}
+            whileInView={fadeInUp.animate}
+            transition={{ ...fadeInUp.transition, duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold text-white mb-12 text-center">
+              Colaboraciones y alianzas
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+              {collaborations.map((collab, index) => (
+                <Card key={index} className="text-center border-amber-200 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-8">
+                    <Users className="h-12 w-12 text-[#4313B8] mb-4 text-aline" />
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{collab.name}</h3>
+                    <Badge variant="secondary" className="mb-4 bg-amber-100 text-amber-800">
+                      {collab.role}
+                    </Badge>
+                    <p className="text-gray-600 mb-4">{collab.description}</p>
+                    <div className="flex items-center justify-center text-amber-600">
+                      <Award className="h-4 w-4 mr-1" />
+                      <span className="font-semibold text-sm">{collab.impact}</span>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -271,25 +271,25 @@ export default function Experience() {
           <h2 className="text-3xl font-bold text-[#1C1E2F] mb-8">
             Lo que dicen de mi trabajo
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="bg-white border-white/20 text-white">
               <CardContent className="p-8">
                 <p className="text-lg  text-[#1C1E2F] italic mb-4">
-                  "Trabajar con él es como tener a un miembro de la familia en el equipo. 
+                  "Trabajar con ella es como tener a un miembro de la familia en el equipo.
                   Su enfoque humano y técnico es exactamente lo que necesitábamos."
                 </p>
-                <p className="font-semibold text-[#1C1E2F] ">- María González, CEO StartupFamiliar</p>
+                <p className="font-semibold text-[#1C1E2F] ">- Aura Baza, Ingeniera de sistemas</p>
               </CardContent>
             </Card>
-            
+
             <Card className="bg-white text-[#1C1E2F]  border-white/20">
               <CardContent className="p-8">
                 <p className="text-lg italic mb-4">
-                  "No solo entregó un producto excelente, sino que nos enseñó a mantener 
+                  "No solo entregó un producto excelente, sino que nos enseñó a mantener
                   nuestra esencia mientras abrazábamos la tecnología."
                 </p>
-                <p className="font-semibold">- Carlos Ruiz, Director Agencia Calidez</p>
+                <p className="font-semibold">- Yenis Barbosa, Madre emprendedora</p>
               </CardContent>
             </Card>
           </div>

@@ -4,9 +4,9 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { Label } from '../ui/label';
-import { MapPin,MessageCircle, Clock, Coffee } from 'lucide-react';
+import { MapPin,MessageCircle, Clock, Coffee, Mail, Phone } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
-
+const CONTACT_EMAIL = 'yeneri.pereira22@gmail.com';
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -51,16 +51,36 @@ export default function Contact() {
       setIsSubmitting(false);
       return;
     }
+   //envío 
+    const subjectLine = formData.subject
+      ? `${formData.subject} - Mensaje de ${formData.name}`
+      : `Nuevo mensaje de ${formData.name}`;
 
-    // Simular envío
+    const body = [
+      `Nombre: ${formData.name}`,
+      `Email de contacto: ${formData.email}`,
+      '',
+      `Asunto: ${formData.subject || 'Sin asunto'}`,
+      '',
+      'Mensaje:',
+      formData.message
+    ].join('\n');
+
+    const mailtoLink = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(body)}`;
+
+    // Abrir el cliente de correo del usuario
+    window.location.href = mailtoLink;
+
+    toast({
+      title: "¡Abriendo tu correo!",
+      description: "Se abrirá tu aplicación de correo para enviar el mensaje. Si no se abre, puedes escribirnos directamente a yeneri.pereira22@gmail.com",
+    });
+
+    // Limpiar formulario después de un breve delay
     setTimeout(() => {
-      toast({
-        title: "¡Mensaje enviado!",
-        description: "Gracias por contactarme. Te responderé pronto, como una buena conversación entre amigos.",
-      });
       setFormData({ name: '', email: '', subject: '', message: '' });
       setIsSubmitting(false);
-    }, 1000);
+    }, 1500);
   };
 
   const contactInfo = [
@@ -68,23 +88,23 @@ export default function Contact() {
     //   icon: Mail,
     //   title: 'Email',
     //   value: 'hola@miespacio.com',
-    //   link: 'mailto:hola@miespacio.com',
+    //   link: `mailto:${CONTACT_EMAIL}`,
     //   description: 'Para conversaciones formales'
     // },
-    // {
-    //   icon: Phone,
-    //   title: 'Teléfono',
-    //   value: '+1 (234) 567-890',
-    //   link: 'tel:+1234567890',
-    //   description: 'Para charlas directas'
-    // },
     {
-      icon: MessageCircle,
-      title: 'WhatsApp',
-      value: 'Mensaje directo',
-      link: 'https://wa.me/3105161701',
-      description: 'Para conversaciones rápidas'
+      icon: Phone,
+      title: 'Teléfono',
+      value: '+57 (310)5161701',
+      link: 'tel:+573105161701',
+      description: 'Para charlas directas'
     },
+    // {
+    //   icon: MessageCircle,
+    //   title: 'WhatsApp',
+    //   value: 'Mensaje directo',
+    //   link: 'https://wa.me/3105161701',
+    //   description: 'Para conversaciones rápidas'
+    // },
     {
       icon: MapPin,
       title: 'Ubicación',
@@ -186,6 +206,13 @@ export default function Contact() {
                   >
                     {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
                   </Button>
+                  <p className="text-xs text-gray-500 text-center">
+                    Al hacer clic se abrirá tu aplicación de correo con el mensaje listo para enviar a{' '}
+                    <a href={`mailto:${CONTACT_EMAIL}`} className="text-amber-600 hover:underline">
+                      {CONTACT_EMAIL}
+                    </a>
+                  </p>
+
                 </form>
               </CardContent>
             </Card>
@@ -283,12 +310,10 @@ export default function Contact() {
             <Card className="border-white">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  ¿Cuánto tiempo toma un proyecto típico?
+                  ¿Cuál es tu proceso de trabajo para desarrollar un proyecto de diseño?
                 </h3>
                 <p className="text-gray-600">
-                  Como preparar un buen guiso, cada proyecto tiene su tiempo. Un sitio web sencillo 
-                  puede tomar 2-4 semanas, mientras que aplicaciones más complejas pueden requerir 
-                  2-3 meses. Siempre prefiero dar tiempo de calidad que apresurar el proceso.
+                  Inicio con una etapa de análisis para comprender la marca, el público objetivo y los objetivos del proyecto. A partir de esto desarrollo propuestas visuales que se revisan y ajustan hasta lograr un resultado alineado con las necesidades del cliente.
                 </p>
               </CardContent>
             </Card>
@@ -296,12 +321,10 @@ export default function Contact() {
             <Card className="border-white">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  ¿Trabajas con clientes de otras ciudades?
+                  ¿Cuánto tiempo tarda un proyecto de diseño?
                 </h3>
                 <p className="text-gray-600">
-                  ¡Por supuesto! La tecnología nos permite colaborar sin importar la distancia. 
-                  He trabajado con clientes de toda Latinoamérica y siempre encuentro la forma 
-                  de hacer que la colaboración se sienta cercana y personal.
+                El tiempo depende del tipo y alcance del proyecto. Un diseño puntual puede tomar pocos días, mientras que proyectos más completos, como una identidad visual, pueden requerir varias semanas para garantizar un resultado sólido y bien desarrollado.
                 </p>
               </CardContent>
             </Card>
@@ -309,13 +332,10 @@ export default function Contact() {
             <Card className="border-white">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  ¿Qué incluye el soporte post-lanzamiento?
+                  ¿Qué información necesitas para comenzar un proyecto?
                 </h3>
                 <p className="text-gray-600">
-                  Como una buena amistad, mi relación con los clientes no termina con la entrega. 
-                  Incluyo 30 días de soporte gratuito y siempre estoy disponible para resolver 
-                  dudas o hacer ajustes menores. Después de todo, quiero que te sientas cómodo 
-                  con tu nueva herramienta digital.
+                 Generalmente necesito conocer el objetivo del proyecto, el público al que va dirigido, referencias visuales si las hay y cualquier lineamiento de marca existente. Con esta información puedo desarrollar una propuesta estratégica y coherente.
                 </p>
               </CardContent>
             </Card>

@@ -169,7 +169,7 @@ export default function Index() {
                 <div className="text-gray-700 font-medium">Años de experiencia</div>
               </div>
               <div className="p-6 bg-white rounded-lg shadow-sm border border-amber-100">
-                <div className="text-4xl font-bold text-[#1C1E2F] mb-2">50+</div>
+                <div className="text-4xl font-bold text-[#1C1E2F] mb-2">10+</div>
                 <div className="text-gray-700 font-medium">Proyectos completados</div>
               </div>
               <div className="p-6 bg-white rounded-lg shadow-sm border border-amber-100">

@@ -108,7 +108,7 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow border-[#F297FB]">
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow border-[#F297FB] cursor-pointer">
                 <div className="relative">
                   <img
                     src={project.image}
@@ -241,11 +241,11 @@ export default function Portfolio() {
             <Card className="text-center border-amber-200 hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🌐</span>
+                  <span className="text-2xl">🏷️</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Desarrollo Web</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Identidad Visual</h3>
                 <p className="text-gray-600 mb-4">
-                  Sitios web y aplicaciones que combinan funcionalidad técnica con experiencia humana.
+                  Creación de logotipos y sistemas visuales que reflejan la esencia de tu marca y fortalecen su presencia.
                 </p>
               </CardContent>
             </Card>
@@ -255,9 +255,9 @@ export default function Portfolio() {
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎨</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Diseño UX/UI</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Branding e Identidad de Marca</h3>
                 <p className="text-gray-600 mb-4">
-                  Interfaces intuitivas que hacen que la tecnología se sienta natural y acogedora.
+                  Desarrollo de identidades visuales completas que transmiten la esencia, valores y personalidad de una marca.
                 </p>
               </CardContent>
             </Card>
@@ -267,9 +267,9 @@ export default function Portfolio() {
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💡</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Consultoría Digital</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Diseño Publicitario</h3>
                 <p className="text-gray-600 mb-4">
-                  Estrategias digitales personalizadas que respetan la esencia de tu negocio.
+                  Diseño de flyers, banners y material promocional que comunica mensajes de forma clara y visualmente impactante.
                 </p>
               </CardContent>
             </Card>
