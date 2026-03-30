@@ -1,7 +1,7 @@
 import { Toaster } from 'sonner';
 import { TooltipProvider } from '../src/components/ui/tooltip';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Index from './components/pages/Index';
@@ -18,7 +18,6 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <BrowserRouter>
       <ScrollToTop/>
         <div className="min-h-screen flex flex-col">
           <Navbar />
@@ -34,7 +33,6 @@ const App = () => (
           </main>
           <Footer />
         </div>
-      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );

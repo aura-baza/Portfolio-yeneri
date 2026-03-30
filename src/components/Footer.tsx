@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import {  Mail, Phone } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
 
 export default function Footer() {
