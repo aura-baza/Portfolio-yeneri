@@ -1,7 +1,6 @@
 import { Card, CardContent } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { Heart, Coffee, Lightbulb, Target } from 'lucide-react';
-// import bici from '../../assets/bici.jpg';
 import bici from '../../assets/yo.png';
 import { motion } from "framer-motion";
 import { slideInLeft } from "../../lib/animations";
@@ -15,6 +14,7 @@ import Dibujo6 from '../../assets/Historia/Ilustracion digital fanart. año 2024
 import Dibujo8 from '../../assets/Historia/dibujo tradiconal. año 2025. edad 20 años.jpeg';
 import Dibujo9 from '../../assets/Historia/dibujo tradicional. año 2018. edad 13 años.jpeg';
 import Dibujo10 from '../../assets/Historia/ilustracion digital. año 2018. edad 13 años.jpeg';
+// import Patron from '../assets/Logo patron/patron rosa.png';
 const carouselImages = [
   {
     url: Dibujo1,
@@ -130,9 +130,9 @@ export default function About() {
                   alt="Mi espacio de trabajo personal"
                   className="rounded-lg shadow-2xl w-full h-96 object-cover"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-                  <p className="text-sm text-gray-600 mb-1">Mi filosofía</p>
-                  <p className="font-semibold text-gray-900">"Auténtico como en casa"</p>
+                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg bg-[url('./assets/Logo-patron/patronrosa.png')] bg-contain bg-center">
+                  <p className="text-sm text-[#4313B8] mb-1">Mi filosofía</p>
+                  <p className="font-semibold text-[#4313B8]">"Auténtico como en casa"</p>
                 </div>
               </div>
             </div>
@@ -140,9 +140,9 @@ export default function About() {
         </section>
 
         {/* Story Section */}
-        <section className="py-20 bg-[#4313B8]">
+        <section className="py-20 bg-[#4313B8] bg-[url('./assets/Logo-patron/patrondemarca.png')] bg-cover bg-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-white mb-8 text-center">
+            <h2 className="text-3xl font-bold text-[#4313B8] mb-8 text-center">
               MI HISTORIA HECHA ARTE
             </h2>
           </div>

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Linkedin, Twitter, Mail, Phone } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Mail, Phone, Dribbble } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className=" bg-[#F297FB] ">
+    <footer className=" bg-[#F297FB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -28,7 +28,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-amber-600 transition-colors"
+                className="text-gray-400 hover:text-amber-600 transition-colors title=Linkedin"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -38,7 +38,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-amber-600 transition-colors"
               >
-                <Twitter className="h-5 w-5" />
+                <Dribbble className="h-5 w-5" />
               </a>
               <a
                 href="mailto:hola@miespacio.com"

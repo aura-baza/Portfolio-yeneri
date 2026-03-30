@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-
+import Logo from '../assets/Logo-patron/LOGO.png';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold text-amber-800 hover:text-amber-900 transition-colors">
-            Mi Espacio
+            <img src={Logo} alt="logo" className='w-34 h-14 object-contain' />
           </Link>
 
           {/* Desktop Navigation */}
