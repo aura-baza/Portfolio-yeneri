@@ -21,7 +21,7 @@ export default function Footer() {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <a
-                      href="https://behance.net/yourprofile"
+                      href="https://www.behance.net/yenepereira"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
@@ -53,7 +53,7 @@ export default function Footer() {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <a
-                      href="https://linkedin.com/in/yourprofile"
+                      href="https://www.linkedin.com/in/yene-pereira-b5b48b2a4/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
@@ -69,7 +69,7 @@ export default function Footer() {
                 </Tooltip>
 
                 {/* Canva */}
-                <Tooltip>
+                {/* <Tooltip>
                   <TooltipTrigger asChild>
                     <a
                       href="https://canva.com/yourprofile"
@@ -85,13 +85,13 @@ export default function Footer() {
                   <TooltipContent>
                     <p>Canva</p>
                   </TooltipContent>
-                </Tooltip>
+                </Tooltip> */}
 
                 {/* Dribbble */}
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <a
-                      href="https://dribbble.com/yourprofile"
+                      href="https://dribbble.com/yeneri-pereira"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"

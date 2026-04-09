@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { Calendar, MapPin, Users, Award } from 'lucide-react';
-import evento1 from "../../assets/evento1.jpg"
-import evento2 from "../../assets/evento2.jpg"
-import conferencia1 from "../../assets/conferencia1.jpg"
-import conferencia2 from "../../assets/conferencia2.jpg"
+import EscrituraAU from "../../assets/Estudios/EscrituraAU.png"
+import FundamentosDS from "../../assets/Estudios/FundamentosDS.png"
+import IlustracionDG from "../../assets/Estudios/IlustracionDG.png"
+import SocialMedia from "../../assets/Estudios/SocialMedia.png"
 import { motion } from "framer-motion";
 import { fadeInUp } from "../../lib/animations";
 
@@ -53,36 +53,36 @@ export default function Experience() {
 
   const events = [
    {
-  title: 'Jornada de Bienestar y Creatividad',
-  type: 'Participante – Apoyo en Diseño',
-  date: '2025',
-  location: 'Affinity BPO',
-  description: 'Participé en actividades internas enfocadas en bienestar laboral, apoyando con piezas gráficas para la comunicación visual del evento.',
-  image: evento1
+  title: 'Introduccion a la escritura audiovisual',
+  type: 'Audiovisual',
+  date: '2023',
+  location: 'SENA',
+  description: 'Principios de narrativa y guion aplicados a contenidos audiovisuales y storytelling.',
+  image: EscrituraAU
 },
 {
-  title: 'Campaña Interna de Seguridad y Salud en el Trabajo',
+  title: 'Fundamentos de diseño',
   type: 'Diseño Gráfico',
-  date: '2025',
-  location: 'Affinity BPO',
-  description: 'Desarrollo de piezas visuales para campañas de SST, facilitando la comunicación clara de mensajes preventivos al equipo de trabajo.',
-  image: evento2
+  date: '2023',
+  location: 'SENA',
+  description: 'Bases teóricas y prácticas del diseño gráfico: composición, color y tipografía aplicadas a la comunicación visual.',
+  image: FundamentosDS
 },
 {
-  title: 'Actividades de Comunicación Interna',
-  type: 'Diseñadora Gráfica en Prácticas',
-  date: '2026',
-  location: 'Affinity BPO',
-  description: 'Apoyo en la creación de material gráfico para eventos y campañas internas, fortaleciendo la identidad visual y la difusión de información dentro de la empresa.',
-  image: conferencia1
+  title: 'Ilustaqcion de personajes',
+  type: 'Ilustación',
+  date: '2024',
+  location: 'SENA',
+  description: 'Creación y desarrollo de personajes con enfoque en expresión, estilo y narrativa visual.',
+  image: IlustracionDG
 },
    {
-  title: 'Campaña Interna de Bienestar Laboral',
-  type: 'Apoyo en Diseño Gráfico',
-  date: '2026',
-  location: 'Affinity BPO',
-  description: 'Diseño de piezas gráficas para la difusión de actividades de bienestar dirigidas a los colaboradores, apoyando la comunicación interna de la empresa.',
-  image: conferencia2
+  title: 'Social media en marketing y estrategias',
+  type: 'Marketing y estrategias',
+  date: '2025',
+  location: 'Linkedin Learning',
+  description: 'Estrategias de contenido y gestión de redes sociales orientadas a posicionamiento y comunicación de marca.',
+  image: SocialMedia
 }
   ];
 
@@ -189,22 +189,22 @@ export default function Experience() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Eventos y conferencias
+              Estudios certificados
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {events.map((event, index) => (
-                <Card key={index} className="overflow-hidden border-amber-200 hover:shadow-lg transition-shadow">
+                <Card key={index} className="overflow-hidden border-[#4313B8] hover:shadow-lg transition-shadow">
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-100 object-cover"
                   />
-                  <CardHeader>
+                  <CardHeader className='border-2 mt-5'>
                     <div className="flex justify-between items-start">
                       <div>
                         <CardTitle className="text-lg text-gray-900">{event.title}</CardTitle>
-                        <Badge className="mt-2 bg-amber-600 text-white">{event.type}</Badge>
+                        <Badge className="mt-2 bg-[#4313B8] text-white">{event.type}</Badge>
                       </div>
                       <div className="text-right text-sm text-gray-500">
                         <div className="flex items-center">
@@ -245,7 +245,7 @@ export default function Experience() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
               {collaborations.map((collab, index) => (
-                <Card key={index} className="text-center border-amber-200 hover:shadow-lg transition-shadow">
+                <Card key={index} className="text-center border-[#F297FB] hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
                     <Users className="h-12 w-12 text-[#4313B8] mb-4 text-aline" />
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{collab.name}</h3>

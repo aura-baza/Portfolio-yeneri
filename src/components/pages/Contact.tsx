@@ -116,7 +116,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-[#F297FB]">
+      <section className="py-20 bg-[#F297FB] ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold text-[#1C1E2F] mb-6">
             Conversemos como en casa
@@ -129,9 +129,9 @@ export default function Contact() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20 bg-[#4313B8] ">
+      <section className="py-20 bg-[#4313B8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Contact Form */}
             <Card className="border-amber-200 shadow-lg">
               <CardHeader>

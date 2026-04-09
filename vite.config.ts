@@ -5,8 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:"/Portfolio-yeneri/",
   plugins: [react(),tailwindcss()],
+  base:"/Portfolio-yeneri/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

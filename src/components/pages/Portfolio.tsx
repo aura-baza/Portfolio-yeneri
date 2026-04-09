@@ -5,9 +5,8 @@ import { Button } from '../ui/button';
 import { Star } from 'lucide-react';
 import imagen1 from "../../assets/HogarTech.png"
 import imagen2 from "../../assets/logo original helados.png"
-import imagen4 from "../../assets/imagen1.jpg"
-import imagen5 from "../../assets/imagen2.jpg"
-import imagen6 from "../../assets/imagen3.jpg"
+import imagen4 from "../../assets/Canal de youtube Josue MUESTRA.png"
+import imagen5 from "../../assets/Ilustracion Canal de youtube Sam y lola.png"
 import imagen3 from "../../assets/flyer.png"
 import { motion } from "framer-motion";
 import {
@@ -68,15 +67,15 @@ export default function Portfolio() {
       featured: false,
       link: '#'
     },
-    {
-      title: 'Rediseño UX para Plataforma Educativa',
-      category: 'Diseño UX/UI',
-      description: 'Interfaz intuitiva y acogedora para una plataforma de aprendizaje online, diseñada para hacer que estudiar se sienta como estar en casa.',
-      image: imagen6,
-      technologies: ['Figma', 'User Research', 'Prototyping', 'Usability Testing'],
-      featured: true,
-      link: '#'
-    }
+    // {
+    //   title: 'Rediseño UX para Plataforma Educativa',
+    //   category: 'Diseño UX/UI',
+    //   description: 'Interfaz intuitiva y acogedora para una plataforma de aprendizaje online, diseñada para hacer que estudiar se sienta como estar en casa.',
+    //   image: imagen6,
+    //   technologies: ['Figma', 'User Research', 'Prototyping', 'Usability Testing'],
+    //   featured: true,
+    //   link: '#'
+    // }
   ];
 
   const filteredProjects = selectedCategory === 'Todos'
