@@ -198,7 +198,7 @@ export default function Experience() {
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-100 object-cover"
+                    className="w-full h-100 object-contain"
                   />
                   <CardHeader className='border-2 mt-5'>
                     <div className="flex justify-between items-start">
