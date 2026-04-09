@@ -200,7 +200,7 @@ export default function Experience() {
                     alt={event.title}
                     className="w-full h-100 object-contain"
                   />
-                  <CardHeader className='border-2 mt-5'>
+                  <CardHeader className=' mt-5'>
                     <div className="flex justify-between items-start">
                       <div>
                         <CardTitle className="text-lg text-gray-900">{event.title}</CardTitle>
